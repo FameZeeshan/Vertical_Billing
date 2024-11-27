@@ -65,7 +65,13 @@ outlook = win32.Dispatch('Outlook.Application')
 # Create a new email
 mail = outlook.CreateItem(0)
 mail.Subject = current_date.strftime("Technology Vertical Billing Inputs - %B %Y")
-mail.Body = f"Hi All,\n\nPlease find attached the billing inputs for the month of {current_date.strftime('%B %Y')}, for technology vertical. Request you to check and confirm on the same.\n\nRequest you to pass on this mail to respective stakeholders in case I have missed any.\n\nRegards,\n\nMohammed Zeeshan\nLead- Capacity Planner\nPh: +91 988429140"
+mail.Body = f'''Hi All,
+\n\nPlease find attached the billing inputs for the month of {current_date.strftime('%B %Y')}, for technology vertical. Request you to check and confirm on the same.
+\n\nRequest you to pass on this mail to respective stakeholders in case I have missed any.
+\n\nRegards,
+\n\nMohammed Zeeshan
+\nLead- Capacity Planner
+\nPh: +91 988429140'''
 mail.To = "mohammed.zeeshan1@sutherlandglobal.com"
 mail.CC = "mohammed.zeeshan1@sutherlandglobal.com; Mohammed.Zeeshan1@sutherlandglobal.com"
 
