@@ -83,12 +83,12 @@ for vertical in unique_verticals:
             mail = outlook.CreateItem(0)
             mail.Subject = current_date.strftime(f"{vertical} Vertical Billing Inputs - %B %Y")
             mail.Body = f'''Hi All,
-            \n\nPlease find attached the billing inputs for the month of {current_date.strftime('%B %Y')}, for technology vertical. Request you to check and confirm on the same.
-            \n\nRequest you to pass on this mail to respective stakeholders in case I have missed any.
-            \n\nRegards,
-            \n\nMohammed Zeeshan
-            \nLead- Capacity Planner
-            \nPh: +91 988429140'''
+            Please find attached the billing inputs for the month of {current_date.strftime('%B %Y')}, for technology vertical. Request you to check and confirm on the same.
+            Request you to pass on this mail to respective stakeholders in case I have missed any.
+            \nRegards,
+            Mohammed Zeeshan
+            Lead- Capacity Planner
+            Ph: +91 988429140'''
             # Set recipients based on vertical-specific mailto list
             mail.To = "; ".join(mailto_lists[vertical])
             
